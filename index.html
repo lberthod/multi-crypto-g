@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>PEPE 1996 GAME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" type="text/css">
+    <script src="https://unpkg.com/moralis-v1/dist/moralis.js"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+   
+
+  </head>
+  <body>
+
+    <div class="game-container">
+    </div>
+    
+    <div class="player-info">
+      <div>
+    
+        <label for="player-name">Your Name</label>
+        <input id="player-name" maxlength="10" type="text" />
+      </div>
+      <div>
+        <label for="player-message">Your message</label>
+        <input id="player-message" maxlength="69" type="text" />
+      </div>
+      <br>
+      <div>
+        <button id="player-color"> Color</button>
+      </div>
+     
+    
+      <body>
+    <div style="margin-top:-200px;">
+        <button  id="btn-login">Play Game</button> 
+          <button id='loginButton' onclick="" class="mx-auto rounded-md p-2 bg-purple-500 text-white">
+            Login with MetaMask
+          </button>
+          <span id='userWallet' class='text-lg text-gray-600 my-2'></span>
+        </div>
+
+        
+       
+      </form>
+      </body>
+    </div>
+    <script src="https://c0f4f41c-2f55-4863-921b-sdk-docs.github.io/cdn/metamask-sdk.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+
+
+    <script src="/KeyPressListener.js"></script>
+    <script type="module" src="/app.js"></script>
+    
+  </body>
+</html>
