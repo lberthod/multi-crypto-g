@@ -26,15 +26,7 @@
 
   </head>
   <body>
-    <div id="overlay" >
-        <div class="buttons">
-          <button class="btn" id="bu"><div class="chevron">↑</div></button>
-          <button class="btn" id="bd"><div class="chevron">↓</div></button>
-          <button class="btn" id="bl"><div class="chevron">←</div></button>
-          <button class="btn" id="br"><div class="chevron">→</div></button>
-          <button onclick="off()">stop</button>
-        </div>
-      </div>
+  
 
     <div class="game-container">
     </div>
@@ -42,9 +34,12 @@
     <div class="player-info">
 
       <div style="padding:20px">
-           <button onclick="on()">m  </button>
+      <div><button class="btn" id="bu"><div class="chevron">↑</div></button>
+      <button class="btn" id="bd"><div class="chevron">↓</div></button> </div>  
+        <button class="btn" id="bl"><div class="chevron">←</div></button>
+        <button class="btn" id="br"><div class="chevron">→</div></button>
       </div>
-      <div>
+      <div style="align-self:flex-end;">
         <label for="player-name">Your Name</label>
         <input id="player-name" maxlength="10" type="text" />
         <label for="player-message">Your message</label>
