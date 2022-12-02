@@ -652,6 +652,24 @@ var temp = 0;
     new KeyPressListener("ArrowLeft", () => handleArrowPress(-1, 0))
     new KeyPressListener("ArrowRight", () => handleArrowPress(1, 0))
 
+
+    bu.addEventListener("click", (e) => {
+      handleArrowPress(0, -1);
+       firstMove = true;
+    });
+    bd.addEventListener("click", (e) => {
+      handleArrowPress(0, 1);
+      firstMove = true;
+    });
+    bl.addEventListener("click", (e) => {
+      handleArrowPress(-1, 0);
+      firstMove = true;
+    });
+    br.addEventListener("click", (e) => {
+      handleArrowPress(1, 0);
+      firstMove = true;
+    });
+
     const allPlayersRef = firebase.database().ref(`players`);
     const allCoinsRef = firebase.database().ref(`coins`);
     
